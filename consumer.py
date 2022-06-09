@@ -15,7 +15,7 @@ def _get_token(config):
     configure how you can get the token (e.g. which token URL to use)
     """
     access_token = cred.get_token(
-        "https://kafka-6tp98k.servicebus.windows.net")
+        "https://kafka-6tp98k.servicebus.windows.net/.default")
     return access_token.token, time.time() + access_token.expires_on
 
 
